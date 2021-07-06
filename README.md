@@ -1,6 +1,6 @@
 # Introduction
 
-For retargeting companies that provides online display advertisements like Criteo, it is important to identify what are the valid clicks. In the context of this project, we will seek to detect some of those suspicious/fraudulent activities by creating a Flink application which will read from Kafka clicks and displays. 
+For retargeting companies that provide online display advertisements like Criteo, it is important to identify what are the valid clicks. In the context of this project, we will seek to detect some of those suspicious/fraudulent activities by creating a Flink application which will read from Kafka clicks and displays. 
 
 From these two topics, we will extract the fraudulent patterns that have been simulated and store the results in an output file.
 We can distinguish this project in two parts: offline analysis and online implementation. For simplicity, it was recommended to do offline analysis which indeed proved to be more efficient.
