@@ -15,6 +15,8 @@ We wanted at first to explore the data on Scala but not being familiar with this
 To do so, we collected the data streams in real time by directly reading and writing them into a text file. We then investigated in Python language via a Google Colab notebook to make it easier for both of us to access after each change. To run our offline analysis, one can execute the notebook
 [offline\_analysis.ipynb](https://colab.research.google.com/drive/1QW6CSgzzblAAuJAfa8ljjy4Aosp7HbaQ?usp=sharing) or visualise it through this [Github repository](https://github.com/emiliechhean/Suspicious_activities/blob/main/offline_analysis.ipynb).
 
+The offline data used can be found in [medium repository](https://github.com/emiliechhean/Suspicious_activities/blob/main/medium).
+
 After doing the offline analysis, we can now turn to the online part :
 
 First, one has to run the docker-compose file  __*docker-compose.yml*__ by executing __*docker-compose rm -f; docker-compose up*__ in the same directory as the file. 
