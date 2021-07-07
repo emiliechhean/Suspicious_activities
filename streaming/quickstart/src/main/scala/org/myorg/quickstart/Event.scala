@@ -12,6 +12,6 @@ class Event(input: JsonNode){
 
   // Override toString to get something printable by Flink
   override def toString : String = {
-    s"eventType: $eventType, uid: $uid, timestamp: $timestamp, ip: $ip, impressionId: $impressionId"
+    s"Event({'eventType': $eventType, 'uid': $uid, 'timestamp': $timestamp, 'ip': $ip, 'impressionId': $impressionId)}"
   }
 }

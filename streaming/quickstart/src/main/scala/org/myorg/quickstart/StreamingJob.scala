@@ -118,8 +118,11 @@ object StreamingJob {
 
 
     // Write to file
+    clicks.writeAsText("./Events/clicks.txt", OVERWRITE).setParallelism(1)
+    displays.writeAsText("./Events/displays.txt", OVERWRITE).setParallelism(1)
     suspiciousUIDs.writeAsText("./suspiciousInputs/suspiciousUID.txt", OVERWRITE).setParallelism(1)
     suspiciousIP.writeAsText("./suspiciousInputs/suspiciousIP.txt", OVERWRITE).setParallelism(1)
+    
     // execute program
     env.execute("Suspicious behavior detector")
 
